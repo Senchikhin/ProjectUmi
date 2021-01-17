@@ -1,0 +1,21 @@
+{
+  "name": "projectumi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.pug --open",
+    "clean": "rm -rf dist && rm -rf .cache/*",
+    "build:parcel": "parcel build src/index.pug --no-source-maps --no-cache --public-url ./",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.2",
+    "pug": "^3.0.0",
+    "stylus": "^0.54.8"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

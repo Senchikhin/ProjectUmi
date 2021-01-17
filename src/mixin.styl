@@ -1,0 +1,53 @@
+xl()
+    @media screen and (max-width: 1224px)
+        {block}
+    
+lg()
+    @media screen and (max-width: 1024px)
+        {block}
+
+md()
+    @media screen and (max-width: 920px)
+        {block}
+    
+sm()
+    @media screen and (max-width: 920px)
+        {block}
+    
+xs()
+    @media screen and (max-width: 920px)
+        {block}
+
+
+row-flex()
+    display flex
+    flex-wrap wrap
+    margin-left -6px
+    margin-right -6px
+    +lg()
+        margin-left -4.5px
+        margin-right -4.5px
+
+col()
+    margin-left 6px
+    margin-right 6px
+    word-wrap break-word
+    +lg()
+        margin-left 4.5px
+        margin-right 4.5px
+size(n)
+    width "calc(100%/12 * %s - 12px)" %n
+
+cent()
+    display: flex
+    justify-content: center
+    align-items: center
+trans(trans = 0.4s)
+    transition: trans
+    
+pos(x,y = x)
+    left: x
+    top: y
+
+flex()
+    display: flex
